@@ -14,6 +14,8 @@ namespace Exercise2B_OptionalParameters
         }
         static void Main(string[] args)
         {
+            /* "Syntactic sugar" is a syntax designed to and does help humans read and use programming language
+            */
         }
     }
 }
