@@ -8,6 +8,10 @@ namespace Exercise2B_OptionalParameters
 {
     class Program
     {
+        void ShirtType(string color = "blue", int size = 32)
+        {
+            Console.WriteLine("My shirt is a {0}, and it's a great shade of {1}", size, color);
+        }
         static void Main(string[] args)
         {
         }
