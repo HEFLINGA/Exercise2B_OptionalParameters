@@ -8,14 +8,26 @@ namespace Exercise2B_OptionalParameters
 {
     class Program
     {
+
+        /*"Syntactic sugar" is a syntax designed to help and does help humans read and use programming language*/
+
         void ShirtType(string color = "blue", int size = 32)
         {
-            Console.WriteLine("My shirt is a {0}, and it's a great shade of {1}", size, color);
+            Console.WriteLine($"Shirt is {color}, and size {size}");
         }
+
+        void ShirtType(int size)
+        {
+            ShirtType("red", size);
+        }
+
+        void ShirtType()
+        {
+            ShirtType("Blue");
+        }
+
         static void Main(string[] args)
         {
-            /* "Syntactic sugar" is a syntax designed to and does help humans read and use programming language
-            */
         }
     }
 }
